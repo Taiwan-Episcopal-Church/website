@@ -7,11 +7,15 @@
       <div class="w-48 mx-auto">
         {% include components/header/logo.html %}
       </div>
-      <div class="absolute"
+      <div class="absolute menu-icon-container"
            style="right: 4px; top: 1.1rem;">
-        <a class="block w-10"
+        <a class="menu-icon-hamburger block w-10"
            href="#">
-          {% include components/header/hamburger_icon.html %}
+          {% include components/header/icon_hamburger.html %}
+        </a>
+        <a class="menu-icon-close block w-10 hidden"
+           href="#">
+          {% include components/header/icon_close.html %}
         </a>
       </div>
     </div>
@@ -19,7 +23,7 @@
   {% include components/header/curve.html %}
 </div>
 
-<div class="menu-mobile absolute inset-0 bg-white"
+<div class="menu-mobile absolute inset-0 bg-white hidden"
      style="top: 86px">
   {% include components/header/menu_mobile.html %}
 </div>
