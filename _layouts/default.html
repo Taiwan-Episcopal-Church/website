@@ -1,12 +1,25 @@
 ---
 ---
 
-{% include header.html %}
+<!doctype html>
+<html class="no-js" lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>{{ site.data.meta.site_name.hant }} {{ site.data.meta.site_name.en }}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style.css">
+  </head>
 
-<main
-  class="bg-teal-500 flex h-screen items-center justify-center w-full"
->
-  {{ content }}
-</main>
+  <body>
 
-{% include footer.html %}
+    {% include components/header/header.html %}
+
+    <main>
+      {{ content }}
+    </main>
+
+    {% include components/footer/footer.html %}
+
+  </body>
+</html>

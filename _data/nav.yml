@@ -1,0 +1,100 @@
+hant:
+  - title: 關於我們
+    t2items:
+      - title: 目標與異象
+        url: /about/mission-and-vision
+      - title: 我們的故事
+        url: /about/history
+      - title: 我們的教會
+        url: /about/churches
+      - title: 組織架構
+        url: /about/structure
+        t3items:
+          - title: 教區主教
+            url: /about/structure/bishops
+          - title: 地區議會
+            url: /about/structure/councils
+      - title: 我們的會徽
+        url: /about/emblem
+      - title: 聯絡我們
+        url: /about/contact-us
+      - title: 認識聖公會
+        url: /about/episcopal-church
+        t3items:
+          - title: 節期的教會
+            url: /about/episcopal-church/church-calendar
+          - title: 禮儀的教會
+            url: /about/episcopal-church/liturgy
+          - title: 共融的教會
+            url: /about/episcopal-church/anglican-communion
+  - title: 禮拜禱告
+    t2items:
+      - title: 生活日課
+        url: /worship/daily-office
+      - title: 聖公會禮儀
+        url: /worship/liturgies
+      - title: 非中文禮拜
+        url: /worship/multilingual
+  - title: 事工服務
+    t2items:
+      - title: 成為神職人員
+        url: /serve/vocations
+      - title: 福傳事工
+        url: /serve/evangelism
+        t3items:
+          - title: 啟發
+            url: /serve/evangelism
+          - title: 三福
+            url: /serve/evangelism
+          - title: 恩惠相遇
+            url: /serve/evangelism
+          - title: 以馬忤斯
+            url: /serve/evangelism
+          - title: 雙翼
+            url: /serve/evangelism
+          - title: 新生命
+            url: /serve/evangelism
+      - title: 新世代培育
+        url: /serve/next-generation
+        t3items:
+          - title: 聖約翰科大
+            url: /serve/next-generation
+          - title: 青年論壇
+            url: /serve/next-generation
+          - title: 得勝者
+            url: /serve/next-generation
+          - title: 幼兒教育
+            url: /serve/next-generation
+      - title: 社福事工
+        url: /serve/social-services/
+        t3items:
+          - title: 老人長照
+            url: /serve/social-services/
+          - title: 弱勢關懷
+            url: /serve/social-services/
+          - title: 社會議題關懷
+            url: /serve/social-services/
+      - title: 出版事工
+        url: /serve/publications
+  - title: 連結生活
+    t2items:
+      - title: 耶穌運動
+        url: /connect/jesus-movement
+      - title: 聖公會季刊
+        url: /connect/gazette
+      - title: 牧者生活
+        url: /connect/ministers
+      - title: 信仰分享
+        url: /connect/parishioners
+      - title: 教會合作
+        url: /connect/church-relations
+  - title: 資源下載
+    t2items:
+      - title: 規範與表格
+        url: /resources/governing
+      - title: 禮儀書
+        url: /resources/liturgy
+      - title: 年議會記錄
+        url: /resources/parish-meetings
+      - title: 牧者專區
+        url: /resources/pastoral
