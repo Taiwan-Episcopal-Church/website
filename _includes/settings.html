@@ -1,0 +1,12 @@
+{% assign split_url = page.url | split: "/" %}
+{% if split_url contains "en" %}
+  {% assign current_lg = "en" %}
+  {% assign translating_to = "hant" %}
+  {% assign translating_text = "中文" %}
+  {% assign home_link = '/en' %}
+{% else %}
+  {% assign current_lg = "hant" %}
+  {% assign translating_to = "en" %}
+  {% assign translating_text = "English" %}
+  {% assign home_link = '/hant' %}
+{% endif %}

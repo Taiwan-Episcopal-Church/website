@@ -4,7 +4,8 @@
   {% for item in site.data.nav.hant %}
     <!-- Tier 1 -->
     <li>
-      <a href="{{ item.url }}" class="block py-4 text-center text-xl text-gray-700
+      <a href="{{ home_link }}{{ item.url }}"
+         class="block py-4 text-center text-xl text-gray-700
                 hover:text-gray-200 hover:bg-gray-700">
         {{ item.title }}
       </a>

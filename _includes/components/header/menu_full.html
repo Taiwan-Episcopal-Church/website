@@ -4,7 +4,7 @@
   {% for item in site.data.nav.hant %}
     <!-- Tier 1 -->
     <li class="inline-block">
-      <a href="{{ item.url }}"
+      <a href="{{ home_link }}{{ item.url }}"
          class="block p-2 text-gray-300 text-lg
                 hover:text-yellow-200 hover:border-b">
         {{ item.title }}
