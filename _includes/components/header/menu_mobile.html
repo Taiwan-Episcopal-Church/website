@@ -1,29 +1,13 @@
-<div class="px-4">
+<div>
 {% if site.data.nav.hant[0] %}
   <ul>
   {% for item in site.data.nav.hant %}
     <!-- Tier 1 -->
-    <li><div class="pt-4 pb-2 border-b-2 border-gray-500 text-sm text-gray-600">{{ item.title }}</div>
-      {% if item.t2items[0] %}
-        <ul>
-          {% for entry in item.t2items %}
-            <!-- Tier 2 -->
-            <li><a href="{{ entry.url }}"
-                   class="block py-2 border-b border-dotted border-black">
-                  {{ entry.title }}
-                </a>
-              {% if entry.t3items[0] %}
-                <ul class="hidden">
-                {% for subentry in entry.t3items %}
-                    <!-- Tier 3 -->
-                    <li><a href="{{ subentry.url }}">{{ subentry.title }}</a></li>
-                {% endfor %}
-                </ul>
-              {% endif %}
-            </li>
-          {% endfor %}
-        </ul>
-      {% endif %}
+    <li>
+      <a href="{{ item.url }}" class="block py-4 text-center text-xl text-gray-700
+                hover:text-gray-200 hover:bg-gray-700">
+        {{ item.title }}
+      </a>
     </li>
   {% endfor %}
   </ul>

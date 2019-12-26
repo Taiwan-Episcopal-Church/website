@@ -1,13 +1,18 @@
 <div style="background-image: url({{ site.url }}/assets/images/advent.jpg); min-height: 400px; max-height: 540px; height: 150vw"
      class="bg-cover bg-center relative">
 
-  <div style="background-color: rgba(255,255,255,0.2)">
+  <div style="background-color: rgba(0,0,0,0.5)">
     <div class="container mx-auto
                 px-4 py-4">
-      <div class="w-48 mx-auto">
-        {% include components/header/logo.html %}
+
+      <!-- Logo -->
+      <div class="mx-auto w-48
+                  md:mx-0 md:inline-block md:w-1/5">
+        {% include components/logo/logo_white.html %}
       </div>
-      <div class="absolute menu-icon-container"
+
+      <!-- Menu Icon Container -->
+      <div class="absolute menu-icon-container md:hidden"
            style="right: 4px; top: 1.1rem;">
         <a class="menu-icon-hamburger block w-10"
            href="#">
@@ -18,11 +23,19 @@
           {% include components/header/icon_close.html %}
         </a>
       </div>
+
+      <!-- Full Menu (for desktop) -->
+      <div class="hidden
+                  md:inline-block md:w-3/4 md:float-right md:pt-2">
+        {% include components/header/menu_full.html %}
+      </div>
+
     </div>
   </div>
   {% include components/header/curve.html %}
 </div>
 
+<!-- Mobile Menu -->
 <div class="menu-mobile absolute inset-0 bg-white hidden"
      style="top: 86px">
   {% include components/header/menu_mobile.html %}

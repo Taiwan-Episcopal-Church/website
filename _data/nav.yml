@@ -1,8 +1,7 @@
 hant:
   - title: 關於我們
+    url: /about
     t2items:
-      - title: 目標與異象
-        url: /about/mission-and-vision
       - title: 我們的故事
         url: /about/history
       - title: 我們的教會
@@ -28,6 +27,7 @@ hant:
           - title: 共融的教會
             url: /about/episcopal-church/anglican-communion
   - title: 禮拜禱告
+    url: /worship
     t2items:
       - title: 生活日課
         url: /worship/daily-office
@@ -36,6 +36,7 @@ hant:
       - title: 非中文禮拜
         url: /worship/multilingual
   - title: 事工服務
+    url: /serve
     t2items:
       - title: 成為神職人員
         url: /serve/vocations
@@ -77,6 +78,7 @@ hant:
       - title: 出版事工
         url: /serve/publications
   - title: 連結生活
+    url: /connect
     t2items:
       - title: 耶穌運動
         url: /connect/jesus-movement
@@ -89,12 +91,13 @@ hant:
       - title: 教會合作
         url: /connect/church-relations
   - title: 資源下載
+    url: /resources
     t2items:
       - title: 規範與表格
         url: /resources/governing
       - title: 禮儀書
         url: /resources/liturgy
       - title: 年議會記錄
-        url: /resources/parish-meetings
+        url: /resources/diocese-meetings
       - title: 牧者專區
         url: /resources/pastoral
