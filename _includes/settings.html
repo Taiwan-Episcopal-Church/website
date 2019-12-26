@@ -1,4 +1,5 @@
 {% assign split_url = page.url | split: "/" %}
+
 {% if split_url contains "en" %}
   {% assign current_lg = "en" %}
   {% assign translating_to = "hant" %}
@@ -10,3 +11,5 @@
   {% assign translating_text = "English" %}
   {% assign home_link = '/hant' %}
 {% endif %}
+
+{% assign hero_image = page.url | remove_first: current_lg | remove: "//" | remove: ".html" | remove: ".md" | split: "/" | join: "-" | append: ".jpg" %}

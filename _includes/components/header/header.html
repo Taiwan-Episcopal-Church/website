@@ -1,4 +1,4 @@
-<div style="background-image: url({{ site.url }}/assets/images/advent.jpg); min-height: 400px; max-height: 540px; height: 150vw"
+<div style="background-image: url({{ site.url }}/assets/images/hero_images/{{ hero_image }}); min-height: 400px; max-height: 540px; height: 150vw"
      class="bg-cover bg-center relative">
 
   <div style="background-color: rgba(0,0,0,0.5)">
@@ -8,11 +8,13 @@
       <!-- Logo -->
       <div class="mx-auto w-48
                   md:mx-0 md:inline-block md:w-1/5">
-        {% include components/logo/logo_white.html %}
+        <a href="{{ home_link }}">
+          {% include components/logo/logo_white.html %}
+        </a>
       </div>
 
       <!-- Menu Icon Container -->
-      <div class="absolute menu-icon-container"
+      <div class="absolute menu-icon-container md:hidden"
            style="right: 4px; top: 1.1rem;">
         <a class="menu-icon-hamburger block w-10"
            href="#">
