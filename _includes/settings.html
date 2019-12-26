@@ -13,3 +13,6 @@
 {% endif %}
 
 {% assign hero_image = page.url | remove_first: current_lg | remove: "//" | remove: ".html" | remove: ".md" | split: "/" | join: "-" | append: ".jpg" %}
+{% if hero_image == ".jpg" %}
+  {% assign hero_image = "index.jpg" %}
+{% endif %}
