@@ -1,0 +1,25 @@
+<div class="px-4">
+  <ul>
+    <li>
+      <a href="{{ home_link }}{{ submenu.url }}">{{ submenu.title }}</a>
+        <ul>
+        {% for t2item in submenu.t2items %}
+          <li>
+            <a href="{{ home_link }}{{ t2item.url }}">{{ t2item.title }}</a>
+            {% if page.url contains t2item.url %}
+              {% if t2item.t3items[0] %}
+                <ul>
+                {% for t3item in t2item.t3items %}
+                  <li>
+                    <a href="{{ home_link }}{{ t3item.url }}">{{ t3item.title }}</a>
+                  </li>
+                {% endfor %}
+                </ul>
+              {% endif %}
+            {% endif %}
+          </li>
+        {% endfor %}
+        </ul>
+    </li>
+  </ul>
+</div>

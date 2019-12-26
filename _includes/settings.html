@@ -1,11 +1,13 @@
 {% assign split_url = page.url | split: "/" %}
 
 {% if split_url contains "en" %}
+  {% assign site_nav = site.data.nav.en %}
   {% assign current_lg = "en" %}
   {% assign translating_to = "hant" %}
   {% assign translating_text = "中文" %}
   {% assign home_link = '/en' %}
 {% else %}
+  {% assign site_nav = site.data.nav.hant %}
   {% assign current_lg = "hant" %}
   {% assign translating_to = "en" %}
   {% assign translating_text = "English" %}
@@ -16,3 +18,6 @@
 {% if hero_image == ".jpg" %}
   {% assign hero_image = "index.jpg" %}
 {% endif %}
+
+{% assign main_category_url = split_url[2] | prepend: "/" %}
+{% assign submenu = site_nav | where: "url", main_category_url | first %}

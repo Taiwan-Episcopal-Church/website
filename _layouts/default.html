@@ -18,8 +18,14 @@
 
     {% include components/header/header.html %}
 
-    <main>
-      {{ content }}
+    <main class="container mx-auto p-4">
+      <div class="">
+        {% include components/submenu/submenu_desktop.html %}
+      </div>
+
+      <div class="">
+        {{ content }}
+      </div>
     </main>
 
     {% include components/footer/footer.html %}
