@@ -4,7 +4,7 @@ hant:
     t2items:
       - title: 我們的故事
         url: /about/history
-      - title: 我們的教會
+      - title: 教會一覽
         url: /about/churches
       - title: 組織架構
         url: /about/structure
