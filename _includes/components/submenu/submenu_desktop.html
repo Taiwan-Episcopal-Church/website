@@ -1,25 +1,40 @@
-<div class="px-4">
-  <ul>
-    <li>
-      <a href="{{ home_link }}{{ submenu.url }}">{{ submenu.title }}</a>
-        <ul>
-        {% for t2item in submenu.t2items %}
-          <li>
-            <a href="{{ home_link }}{{ t2item.url }}">{{ t2item.title }}</a>
-            {% if page.url contains t2item.url %}
-              {% if t2item.t3items[0] %}
-                <ul>
-                {% for t3item in t2item.t3items %}
-                  <li>
-                    <a href="{{ home_link }}{{ t3item.url }}">{{ t3item.title }}</a>
-                  </li>
-                {% endfor %}
-                </ul>
-              {% endif %}
+{% assign category_url_string = home_link | append: submenu.url | remove: '/' %}
+{% assign page_url_string = page.url | remove: '/' %}
+
+<ul class="text-lg text-gray-800 pr-4">
+  <li>
+    <a href="{{ home_link }}{{ submenu.url }}"
+       class="block pb-2 mb-2 border-b-2 border-gray-400
+              hover:text-blue-700
+              {% if page_url_string == category_url_string %} text-pink-700 {% endif %}">
+      {{ submenu.title }}
+    </a>
+      <ul>
+      {% for t2item in submenu.t2items %}
+        <li>
+          <a href="{{ home_link }}{{ t2item.url }}"
+             class="block py-2
+                    hover:text-blue-700
+                    {% if page.url contains t2item.url %} text-pink-700 {% endif %}">
+            {{ t2item.title }}
+          </a>
+          {% if page.url contains t2item.url %}
+            {% if t2item.t3items[0] %}
+              <ul class="pl-6">
+              {% for t3item in t2item.t3items %}
+                <li>
+                  <a href="{{ home_link }}{{ t3item.url }}"
+                     class="block py-2 hover:text-blue-700
+                            {% if page.url contains t3item.url %} text-pink-700 {% endif %}">
+                    {{ t3item.title }}
+                  </a>
+                </li>
+              {% endfor %}
+              </ul>
             {% endif %}
-          </li>
-        {% endfor %}
-        </ul>
-    </li>
-  </ul>
-</div>
+          {% endif %}
+        </li>
+      {% endfor %}
+      </ul>
+  </li>
+</ul>
