@@ -1,5 +1,5 @@
-{% assign category_url_string = home_link | append: submenu.url | remove: '/' %}
-{% assign page_url_string = page.url | remove: '/' %}
+{% assign category_url_string = submenu.url | remove: '/' %}
+{% assign page_url_string = page.url | remove: current_lg | remove: '/' | remove: '.html' | remove: '.md' %}
 
 <ul class="text-lg text-gray-800 pr-4">
   <li>
@@ -11,21 +11,23 @@
     </a>
       <ul>
       {% for t2item in submenu.t2items %}
+      {% assign t2_url_string = t2item.url | remove: '/' %}
         <li>
           <a href="{{ home_link }}{{ t2item.url }}"
              class="block py-2
                     hover:text-blue-700
-                    {% if page.url contains t2item.url %} text-pink-700 {% endif %}">
+                    {% if page_url_string == t2_url_string %} text-pink-700 {% endif %}">
             {{ t2item.title }}
           </a>
           {% if page.url contains t2item.url %}
             {% if t2item.t3items[0] %}
               <ul class="pl-6">
               {% for t3item in t2item.t3items %}
+              {% assign t3_url_string = t3item.url | remove: '/' %}
                 <li>
                   <a href="{{ home_link }}{{ t3item.url }}"
                      class="block py-2 hover:text-blue-700
-                            {% if page.url contains t3item.url %} text-pink-700 {% endif %}">
+                            {% if page_url_string == t3_url_string %} text-pink-700 {% endif %}">
                     {{ t3item.title }}
                   </a>
                 </li>
