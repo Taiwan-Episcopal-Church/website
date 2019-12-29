@@ -6,7 +6,8 @@
     <li>
       <a href="{{ home_link }}{{ item.url }}"
          class="block py-4 text-center text-xl text-gray-700
-                hover:text-gray-200 hover:bg-gray-700">
+                hover:text-gray-200 hover:bg-gray-700
+                {% if item.url == main_category_url %} text-pink-700 {% endif %}">
         {{ item.title }}
       </a>
     </li>

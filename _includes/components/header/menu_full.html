@@ -6,7 +6,8 @@
     <li class="inline-block">
       <a href="{{ home_link }}{{ item.url }}"
          class="block p-2 text-gray-300 text-lg
-                hover:text-yellow-200 hover:border-b">
+                hover:text-yellow-200 hover:border-b
+                {% if item.url == main_category_url %} border-b-2 border-yellow-400 {% endif %}">
         {{ item.title }}
       </a>
     </li>
