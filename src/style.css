@@ -1,5 +1,9 @@
 @tailwind base;
 
+.hover-bg-gray-800-50:hover {
+  background-color: rgba(45, 55, 72, 0.50)
+}
+
 @tailwind components;
 
 @tailwind utilities;
