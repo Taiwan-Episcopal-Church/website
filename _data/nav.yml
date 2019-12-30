@@ -2,10 +2,17 @@ hant:
   - title: 關於我們
     url: /about
     t2items:
-      - title: 我們的故事
-        url: /about/history
-      - title: 教會一覽
-        url: /about/churches
+      - title: 我們的信仰
+        url: /about/our-faith
+        t3items:
+          - title: 節期的教會
+            url: /about/our-faith/church-calendar
+          - title: 禮儀的教會
+            url: /about/our-faith/liturgy
+          - title: 共融的教會
+            url: /about/our-faith/anglican-communion
+      - title: 聖公會在台灣
+        url: /about/our-history
       - title: 組織架構
         url: /about/structure
         t3items:
@@ -15,17 +22,10 @@ hant:
             url: /about/structure/councils
       - title: 我們的會徽
         url: /about/emblem
+      - title: 教會一覽
+        url: /about/our-churches
       - title: 聯絡我們
         url: /about/contact-us
-      - title: 認識聖公會
-        url: /about/episcopal-church
-        t3items:
-          - title: 節期的教會
-            url: /about/episcopal-church/church-calendar
-          - title: 禮儀的教會
-            url: /about/episcopal-church/liturgy
-          - title: 共融的教會
-            url: /about/episcopal-church/anglican-communion
   - title: 禮拜禱告
     url: /worship
     t2items:
