@@ -33,7 +33,30 @@ hant:
         url: /worship/daily-office
       - title: 聖公會禮儀
         url: /worship/liturgies
-      - title: 非中文禮拜
+        t3items:
+          - title: 聖洗禮
+            url: /worship/liturgies/baptism
+          - title: 感恩聖禮
+            url: /worship/liturgies/holy-eucharist
+          - title: 早晚禱
+            url: /worship/liturgies/daily-prayer
+          - title: 堅振禮
+            url: /worship/liturgies/confirmation
+          - title: 終榮禮
+            url: /worship/liturgies/funeral
+          - title: 婚禮
+            url: /worship/liturgies/wedding
+          - title: 悔罪復合禮
+            url: /worship/liturgies/confession
+          - title: 服侍病人禮
+            url: /worship/liturgies/bless-the-sick
+          - title: 按立聖職禮
+            url: /worship/liturgies/ordination
+          - title: 新居祝福
+            url: /worship/liturgies/new-residence
+          - title: 敬祖禮
+            url: /worship/liturgies/ancestor-memorial
+      - title: 非華語禮拜
         url: /worship/multilingual
   - title: 事工服務
     url: /serve
@@ -44,42 +67,44 @@ hant:
         url: /serve/evangelism
         t3items:
           - title: 啟發
-            url: /serve/evangelism
+            url: /serve/evangelism/alpha-program
           - title: 三福
-            url: /serve/evangelism
+            url: /serve/evangelism/three-blessings
           - title: 恩惠相遇
-            url: /serve/evangelism
+            url: /serve/evangelism/meet-grace
           - title: 以馬忤斯
-            url: /serve/evangelism
+            url: /serve/evangelism/emmaus
           - title: 雙翼
-            url: /serve/evangelism
+            url: /serve/evangelism/two-wings
           - title: 新生命
-            url: /serve/evangelism
+            url: /serve/evangelism/new-life
       - title: 新世代培育
         url: /serve/next-generation
         t3items:
           - title: 聖約翰科大
-            url: /serve/next-generation
+            url: /serve/next-generation/st-johns-university
           - title: 青年論壇
-            url: /serve/next-generation
+            url: /serve/next-generation/youth-forum
           - title: 得勝者
-            url: /serve/next-generation
+            url: /serve/next-generation/champions-program
           - title: 幼兒教育
-            url: /serve/next-generation
+            url: /serve/next-generation/pre-k
       - title: 社福事工
         url: /serve/social-services/
         t3items:
           - title: 老人長照
-            url: /serve/social-services/
+            url: /serve/social-services/senior
           - title: 弱勢關懷
-            url: /serve/social-services/
+            url: /serve/social-services/underprivileged
           - title: 社會議題關懷
-            url: /serve/social-services/
+            url: /serve/social-services/public-issues
       - title: 出版事工
         url: /serve/publications
   - title: 連結生活
     url: /connect
     t2items:
+      - title: 人生大事
+        url: /connect/life-events
       - title: 耶穌運動
         url: /connect/jesus-movement
       - title: 聖公會季刊
@@ -98,6 +123,6 @@ hant:
       - title: 禮儀書
         url: /resources/liturgy
       - title: 年議會記錄
-        url: /resources/diocese-meetings
+        url: /resources/annual-convention
       - title: 牧者專區
         url: /resources/pastoral
